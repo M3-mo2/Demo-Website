@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#c1121f" />
+<title>كبابجي ومشويات الشيخ | أشهى المشويات في القاهرة</title>
+<meta name="description" content="كبابجي ومشويات الشيخ - كفتة، كباب، حواوشي، فراخ، شيش طاووق، ممبار. اطلب الآن عبر واتساب." />
+
+<!-- ✅ FIX: خط Tajawal الجميل + preload للصور -->
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="dns-prefetch" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" fetchpriority="high"
+      href="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1920&q=80">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  /* ✅ خط Tajawal الجديد */
+  font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  font-weight: 400;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+:focus-visible {
+  outline: 3px solid var(--brand-3);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+:root {
+  --brand: #c1121f;
+  --brand-2: #e63946;
+  --brand-3: #f4a261;
+  --brand-dark: #780000;
+  --dark: #1a1613;
+  --text: #2d2520;
+  --muted: #7a6f66;
+  --bg: #fffaf3;
+  --card: #ffffff;
+  --border: #f0e6d8;
+  --shadow-sm: 0 4px 12px rgba(26,22,19,.06);
+  --shadow: 0 12px 36px rgba(26,22,19,.08);
+  --shadow-lg: 0 24px 60px rgba(26,22,19,.14);
+  --radius: 20px;
+  --radius-sm: 14px;
+  --whatsapp: #25D366;
+  --header-h: 76px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  position: fixed; top: 0; right: 0; left: 0;
+  z-index: 100;
+  transition: background .35s ease, box-shadow .35s ease, padding .35s ease;
+  padding: 14px 0;
+}
+.header__inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.header.scrolled {
+  background: rgba(255,250,243,.9);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  box-shadow: 0 1px 0 rgba(26,22,19,.06), 0 8px 24px rgba(26,22,19,.05);
+  padding: 8px 0;
+}
+
+.logo {
+  display: inline-flex; align-items: center;
+  transition: opacity .25s;
+  flex-shrink: 0;
+}
+.logo:hover { opacity: .85; }
+
+.logo__img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  transition: height .35s ease, filter .35s ease;
+  filter: brightness(0) invert(1) drop-shadow(0 4px 12px rgba(0,0,0,.4));
+}
+.header.scrolled .logo__img {
+  height: 46px;
+  filter: drop-shadow(0 4px 10px rgba(193,18,31,.15));
+}
+
+.logo__fallback {
+  display: none;
+  align-items: center; gap: 10px;
+  color: #fff;
+  transition: color .3s;
+}
+.header.scrolled .logo__fallback { color: var(--dark); }
+
+.logo__mark {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  display: grid; place-items: center;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(193,18,31,.35);
+  flex-shrink: 0;
+}
+.logo__mark svg { width: 24px; height: 24px; }
+
+.logo__name {
+  font-weight: 900; font-size: 20px;
+  line-height: 1; letter-spacing: -.3px;
+}
+
+.nav { display: flex; gap: 4px; }
+.nav a {
+  padding: 8px 16px; border-radius: 10px;
+  font-size: 15px; font-weight: 700;
+  color: #fff;
+  transition: background .25s, color .25s;
+  text-shadow: 0 2px 8px rgba(0,0,0,.5);
+}
+.nav a:hover { background: rgba(255,255,255,.18); }
+.header.scrolled .nav a {
+  color: var(--text);
+  text-shadow: none;
+}
+.header.scrolled .nav a:hover {
+  background: rgba(193,18,31,.1);
+  color: var(--brand);
+}
+
+.header__cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, #e11d2a 0%, var(--brand) 50%, var(--brand-dark) 100%);
+  color: #fff !important;
+  padding: 11px 22px; border-radius: 100px;
+  font-weight: 800; font-size: 14px;
+  box-shadow:
+    0 8px 20px rgba(193,18,31,.45),
+    inset 0 1px 0 rgba(255,255,255,.25);
+  transition: transform .2s, box-shadow .2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.header__cta:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 28px rgba(193,18,31,.55),
+    inset 0 1px 0 rgba(255,255,255,.3);
+}
+
+.menu-toggle {
+  display: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  transition: color .3s, background .25s;
+}
+.menu-toggle:hover { background: rgba(255,255,255,.15); }
+.header.scrolled .menu-toggle { color: var(--dark); }
+.header.scrolled .menu-toggle:hover { background: rgba(193,18,31,.08); }
+
+@media (max-width: 860px) {
+  .nav {
+    position: fixed; top: 0; right: -100%;
+    width: 78%; max-width: 320px; height: 100vh;
+    background: #fff; flex-direction: column;
+    padding: 90px 24px 24px; gap: 4px;
+    transition: right .4s cubic-bezier(.4,0,.2,1);
+    box-shadow: -20px 0 60px rgba(0,0,0,.15);
+    z-index: 99;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .nav.open { right: 0; }
+  .nav a {
+    color: var(--text) !important;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-shadow: none;
+  }
+  .menu-toggle { display: block; }
+  .header__cta { padding: 11px; border-radius: 50%; font-size: 13px; }
+  .header__cta span { display: none; }
+  .header__cta svg { width: 20px; height: 20px; }
+
+  .logo__img { height: 46px; }
+  .header.scrolled .logo__img { height: 40px; }
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative; min-height: 100vh; min-height: 100svh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; color: #fff; overflow: hidden;
+  padding: 130px 20px 140px;
+}
+
+.hero__bg {
+  position: absolute; inset: 0;
+  overflow: hidden;
+}
+.hero__bg img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  animation: kenburns 20s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes kenburns {
+  from { transform: scale(1.05) translate(0,0); }
+  to   { transform: scale(1.15) translate(-1%, -1%); }
+}
+
+.hero__bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at center, rgba(26,22,19,.55) 0%, rgba(26,22,19,.92) 100%),
+    linear-gradient(to bottom, rgba(26,22,19,.6), rgba(26,22,19,.3) 40%, rgba(26,22,19,.95));
+}
+
+.hero__content {
+  position: relative; z-index: 2;
+  max-width: 840px;
+  animation: heroIn 1s ease-out both;
+}
+@keyframes heroIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+.hero__badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.14);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,.28);
+  padding: 8px 18px; border-radius: 100px;
+  font-size: 13px; font-weight: 700; margin-bottom: 24px;
+  color: #ffd9a8;
+  text-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 900;
+  line-height: 1.25; margin-bottom: 20px;
+  color: #fff;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.35),
+    0 8px 32px rgba(0,0,0,.55);
+}
+.hero h1 em {
+  font-style: normal;
+  color: #ffb877;
+  background: linear-gradient(135deg, #ffd9a8 0%, #f4a261 50%, #e85d2f 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 12px rgba(244,162,97,.4));
+}
+
+.hero p {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: #fff;
+  max-width: 640px; margin: 0 auto 38px;
+  font-weight: 500;
+  line-height: 1.75;
+  text-shadow: 0 2px 12px rgba(0,0,0,.6);
+  opacity: .95;
+}
+
+.hero__actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+/* ===== BUTTONS ===== */
+.btn {
+  position: relative;
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 34px; border-radius: 100px;
+  font-weight: 800; font-size: 16px;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, #ff2a3a 0%, #c1121f 45%, #780000 100%);
+  color: #fff;
+  box-shadow:
+    0 14px 36px rgba(193,18,31,.5),
+    0 4px 10px rgba(193,18,31,.3),
+    inset 0 1px 0 rgba(255,255,255,.3),
+    inset 0 -2px 0 rgba(0,0,0,.15);
+}
+.btn--primary::before {
+  content: '';
+  position: absolute; top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+  transition: left .65s ease;
+  z-index: 1;
+}
+.btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 20px 50px rgba(193,18,31,.65),
+    0 6px 14px rgba(193,18,31,.4),
+    inset 0 1px 0 rgba(255,255,255,.35),
+    inset 0 -2px 0 rgba(0,0,0,.15);
+}
+.btn--primary:hover::before { left: 100%; }
+.btn--primary:active { transform: translateY(-1px); }
+
+.btn--ghost {
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,.4);
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.2);
+}
+.btn--ghost:hover {
+  background: rgba(255,255,255,.25);
+  border-color: rgba(255,255,255,.7);
+  transform: translateY(-3px);
+  box-shadow:
+    0 14px 36px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.3);
+}
+
+.hero__scroll {
+  position: absolute; bottom: 96px; left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,.75);
+  font-size: 12px; font-weight: 700;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  animation: bounce 2s infinite; z-index: 2;
+  pointer-events: none;
+  text-shadow: 0 2px 8px rgba(0,0,0,.5);
+}
+@keyframes bounce {
+  0%,100% { transform: translate(-50%, 0); }
+  50%     { transform: translate(-50%, 8px); }
+}
+
+/* ===== STEPS SECTION ===== */
+.steps-section {
+  background: #fff;
+  padding: 80px 20px 70px;
+  margin-top: -60px; position: relative; z-index: 3;
+  border-radius: 40px 40px 0 0;
+}
+
+.steps-head {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 56px;
+}
+.steps-head .eyebrow {
+  display: inline-block;
+  color: var(--brand);
+  font-size: 13px; font-weight: 800;
+  margin-bottom: 10px;
+}
+.steps-head h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 900; color: var(--dark);
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+.steps-head p { color: var(--muted); font-size: 15px; }
+
+.steps {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  position: relative;
+}
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: 16.66%;
+  right: 16.66%;
+  height: 2px;
+  background-image: linear-gradient(90deg, rgba(193,18,31,.35) 50%, transparent 50%);
+  background-size: 14px 2px;
+  background-repeat: repeat-x;
+  z-index: 0;
+}
+
+.step { text-align: center; position: relative; z-index: 1; }
+
+.step__num {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff2a3a, var(--brand) 50%, var(--brand-dark));
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow:
+    0 16px 40px rgba(193,18,31,.4),
+    0 4px 12px rgba(193,18,31,.25),
+    inset 0 2px 0 rgba(255,255,255,.3),
+    inset 0 -3px 0 rgba(0,0,0,.15);
+  border: 5px solid #fff;
+  position: relative;
+}
+.step__num::after {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 2px dashed rgba(193,18,31,.18);
+  animation: ringRotate 20s linear infinite;
+}
+@keyframes ringRotate { to { transform: rotate(360deg); } }
+
+.step__title {
+  font-size: 19px;
+  font-weight: 900;
+  color: var(--dark);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.step__desc {
+  font-size: 14.5px;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+  .steps-section { padding: 60px 16px 50px; border-radius: 28px 28px 0 0; }
+  .steps-head { margin-bottom: 40px; }
+  .steps { grid-template-columns: 1fr; gap: 34px; }
+  .steps::before { display: none; }
+  .step__num { width: 76px; height: 76px; font-size: 32px; }
+  .step__desc { max-width: 280px; }
+}
+
+/* ===== SECTIONS ===== */
+.section { padding: 90px 20px; }
+.section__head { text-align: center; max-width: 640px; margin: 0 auto 50px; }
+.section__eyebrow {
+  display: inline-block; color: var(--brand);
+  font-size: 13px; font-weight: 800;
+  margin-bottom: 10px;
+}
+.section__head h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 900; color: var(--dark); line-height: 1.3; margin-bottom: 12px;
+}
+.section__head p { color: var(--muted); font-size: 16px; }
+
+/* ===== ABOUT ===== */
+.about {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: center; max-width: 1100px; margin: 0 auto;
+}
+.about__images {
+  display: grid; grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: 1fr 1fr; gap: 14px; aspect-ratio: 1;
+}
+.about__images img {
+  width: 100%; height: 100%; object-fit: cover;
+  border-radius: var(--radius-sm); box-shadow: var(--shadow);
+}
+.about__images img:first-child { grid-row: span 2; border-radius: var(--radius); }
+.about__text h2 {
+  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
+  font-weight: 900; color: var(--dark); line-height: 1.35; margin-bottom: 18px;
+}
+.about__text p { color: var(--muted); font-size: 16px; margin-bottom: 16px; }
+.about__stats {
+  display: flex; gap: 30px; margin-top: 28px;
+  padding-top: 24px; border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.stat strong {
+  display: block; font-size: 28px; font-weight: 900;
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; line-height: 1.1;
+}
+.stat span { font-size: 13px; color: var(--muted); font-weight: 600; }
+@media (max-width: 820px) {
+  .about { grid-template-columns: 1fr; gap: 40px; }
+  .about__images { aspect-ratio: 16/12; }
+}
+
+/* ===== MENU ===== */
+.menu-section {
+  background: linear-gradient(180deg, #fffaf3, #fff5e6);
+  position: relative;
+}
+
+/* ✅ FIX: شريط الفلترة الجديد */
+.menu-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 6px;
+  background: rgba(255,255,255,.95);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border-radius: 100px;
+  box-shadow:
+    0 8px 32px rgba(26,22,19,.07),
+    0 2px 8px rgba(26,22,19,.04),
+    inset 0 1px 0 rgba(255,255,255,.9);
+  border: 1px solid rgba(240,230,216,.9);
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 48px;
+  position: relative;
+}
+
+.tab {
+  position: relative;
+  padding: 11px 24px;
+  border-radius: 100px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--muted);
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  white-space: nowrap;
+  z-index: 1;
+  font-family: inherit;
+}
+
+.tab:hover {
+  color: var(--brand);
+  background: rgba(193,18,31,.06);
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #ff2a3a 0%, #c1121f 45%, #8b0000 100%);
+  color: #fff;
+  box-shadow:
+    0 8px 24px rgba(193,18,31,.42),
+    0 4px 10px rgba(193,18,31,.25),
+    inset 0 1px 0 rgba(255,255,255,.25),
+    inset 0 -2px 0 rgba(0,0,0,.15);
+  transform: translateY(-1px);
+  font-weight: 800;
+}
+
+.tab.active:hover {
+  background: linear-gradient(135deg, #ff2a3a 0%, #c1121f 45%, #8b0000 100%);
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .menu-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5px;
+    border-radius: 100px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    /* ✅ fade على الأطراف يدل إن في حاجة تتسحب */
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+  }
+  .menu-tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    scroll-snap-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+.menu-grid {
+  max-width: 1180px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px;
+}
+.dish {
+  background: #fff; border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform .35s cubic-bezier(.4,0,.2,1), box-shadow .35s ease, border-color .35s ease;
+  display: flex; flex-direction: column; border: 1px solid var(--border);
+  opacity: 0; transform: translateY(20px);
+  animation: cardIn .5s ease-out forwards;
+}
+@keyframes cardIn { to { opacity: 1; transform: translateY(0); } }
+.dish:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: rgba(193,18,31,.2); }
+.dish__img {
+  position: relative; aspect-ratio: 4/3; overflow: hidden;
+  background: linear-gradient(135deg, #ffe0e0, #ffcccc);
+}
+.dish__img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .6s cubic-bezier(.4,0,.2,1);
+}
+.dish:hover .dish__img img { transform: scale(1.08); }
+.dish__badge {
+  position: absolute; top: 12px; right: 12px;
+  background: linear-gradient(135deg, var(--brand-3), var(--brand));
+  color: #fff; font-size: 11px; font-weight: 800;
+  padding: 5px 12px; border-radius: 100px;
+  box-shadow: 0 4px 12px rgba(193,18,31,.4);
+}
+.dish__body { padding: 18px 18px 20px; display: flex; flex-direction: column; flex: 1; }
+.dish__title { font-size: 17px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+.dish__desc { font-size: 13px; color: var(--muted); margin-bottom: 14px; flex: 1; line-height: 1.7; }
+.dish__bottom {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; padding-top: 14px; border-top: 1px dashed var(--border);
+  flex-wrap: wrap;
+}
+.dish__price {
+  font-size: 20px; font-weight: 900; color: var(--brand);
+  display: flex; align-items: baseline; gap: 3px;
+}
+.dish__price small { font-size: 12px; color: var(--muted); font-weight: 700; }
+.dish__order {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #f0fdf4; color: var(--whatsapp);
+  padding: 9px 16px; border-radius: 100px;
+  font-size: 13px; font-weight: 800;
+  border: 1.5px solid rgba(37,211,102,.35);
+  transition: background .25s ease, color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+.dish__order:hover {
+  background: var(--whatsapp); color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37,211,102,.4);
+}
+
+/* ===== CTA BANNER ===== */
+.cta-banner {
+  max-width: 1100px; margin: 0 auto; padding: 60px 40px;
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(193,18,31,.96), rgba(120,0,0,.96)),
+    url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover; background-position: center;
+  background-blend-mode: overlay;
+  color: #fff; text-align: center;
+  position: relative; overflow: hidden; box-shadow: var(--shadow-lg);
+}
+.cta-banner::before {
+  content: ''; position: absolute; top: -50%; left: -10%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(244,162,97,.4), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.cta-banner h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 900; margin-bottom: 12px; position: relative;
+  text-shadow: 0 2px 12px rgba(0,0,0,.3);
+}
+.cta-banner p {
+  font-size: 16px; opacity: .95; margin-bottom: 28px;
+  max-width: 520px; margin-inline: auto; position: relative;
+  text-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.cta-banner .btn--ghost {
+  background: rgba(255,255,255,.15);
+  border: 1.5px solid rgba(255,255,255,.5);
+  backdrop-filter: blur(12px);
+}
+.cta-banner .btn--ghost:hover {
+  background: rgba(255,255,255,.28);
+  border-color: #fff;
+}
+.cta-banner .btn--primary {
+  background: linear-gradient(135deg, #fff, #ffe8d4);
+  color: var(--brand-dark);
+  box-shadow:
+    0 12px 32px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.9),
+    inset 0 -2px 0 rgba(0,0,0,.08);
+}
+.cta-banner .btn--primary::before {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.7), transparent);
+}
+.cta-banner .btn--primary:hover {
+  box-shadow:
+    0 18px 44px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+/* ===== CONTACT ===== */
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1100px; margin: 0 auto; }
+.info-card {
+  background: #fff; padding: 32px; border-radius: var(--radius);
+  border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+}
+.info-item { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px dashed var(--border); }
+.info-item:last-child { border-bottom: none; padding-bottom: 0; }
+.info-item:first-child { padding-top: 0; }
+.info-icon {
+  width: 46px; height: 46px; border-radius: 14px;
+  background: linear-gradient(135deg, #ffe0e0, #ffcccc);
+  color: var(--brand); display: grid; place-items: center; flex-shrink: 0;
+}
+.info-item h4 { font-size: 15px; font-weight: 800; color: var(--dark); margin-bottom: 2px; }
+.info-item p, .info-item a { font-size: 14px; color: var(--muted); line-height: 1.7; }
+.info-item a:hover { color: var(--brand); }
+
+.map-wrap {
+  border-radius: var(--radius); overflow: hidden; min-height: 380px;
+  background: linear-gradient(135deg, #ffe0e0, #ffcccc);
+  box-shadow: var(--shadow-sm); border: 1px solid var(--border);
+  position: relative;
+}
+.map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; min-height: 380px; filter: saturate(.9); }
+@media (max-width: 820px) { .contact { grid-template-columns: 1fr; } }
+
+/* ===== FOOTER ===== */
+.footer { background: #1a1613; color: #b8aca1; padding: 60px 20px 30px; margin-top: 60px; }
+.footer__inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px;
+  padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.footer .logo { color: #fff; margin-bottom: 14px; }
+.footer .logo__img { filter: none; height: 56px; }
+.footer__about p { font-size: 14px; line-height: 1.9; max-width: 340px; }
+.footer h4 { color: #fff; font-size: 15px; margin-bottom: 16px; font-weight: 800; }
+.footer ul { list-style: none; }
+.footer ul li { margin-bottom: 10px; }
+.footer ul a { font-size: 14px; transition: color .2s; }
+.footer ul a:hover { color: var(--brand-3); }
+.footer__bottom {
+  max-width: 1100px; margin: 24px auto 0;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 14px; font-size: 13px;
+}
+.socials { display: flex; gap: 10px; }
+.socials a {
+  width: 38px; height: 38px; border-radius: 12px;
+  background: rgba(255,255,255,.06);
+  display: grid; place-items: center;
+  transition: background .25s, color .25s, transform .25s;
+}
+.socials a:hover { background: var(--brand); color: #fff; transform: translateY(-3px); }
+@media (max-width: 720px) {
+  .footer__inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer__bottom { justify-content: center; text-align: center; }
+}
+
+/* ===== FLOATING WHATSAPP ===== */
+.float-wa {
+  position: fixed; bottom: 24px; left: 24px; z-index: 150;
+  display: flex; align-items: center; gap: 10px;
+  background: linear-gradient(135deg, #2ee06f, #25D366 50%, #1aa84c);
+  color: #fff;
+  padding: 14px 20px 14px 16px; border-radius: 100px;
+  font-weight: 800; font-size: 15px;
+  box-shadow:
+    0 12px 32px rgba(37,211,102,.5),
+    inset 0 1px 0 rgba(255,255,255,.3);
+  transition: transform .3s ease, box-shadow .3s ease;
+  animation: waPulse 2.4s ease-in-out infinite;
+}
+.float-wa:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow:
+    0 18px 44px rgba(37,211,102,.65),
+    inset 0 1px 0 rgba(255,255,255,.35);
+}
+.float-wa svg { flex-shrink: 0; }
+@keyframes waPulse {
+  0%,100% { box-shadow: 0 12px 32px rgba(37,211,102,.5), 0 0 0 0 rgba(37,211,102,.6); }
+  70%     { box-shadow: 0 12px 32px rgba(37,211,102,.5), 0 0 0 18px rgba(37,211,102,0); }
+}
+@media (max-width: 500px) {
+  .float-wa { padding: 14px; bottom: 16px; left: 16px; }
+  .float-wa span { display: none; }
+}
+
+/* ===== REVEAL ===== */
+.reveal {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s cubic-bezier(.4,0,.2,1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== NAV OVERLAY ===== */
+.nav-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.5);
+  opacity: 0; pointer-events: none; transition: opacity .3s; z-index: 98;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.nav-overlay.show { opacity: 1; pointer-events: auto; }
+
+/* ===== RESPONSIVE PADDING ===== */
+@media (max-width: 640px) {
+  .section { padding: 64px 16px; }
+  .section__head { margin-bottom: 34px; }
+  .cta-banner { padding: 44px 22px; border-radius: 24px; }
+  .info-card { padding: 24px 20px; }
+  .hero { padding: 110px 16px 130px; }
+  .hero__scroll { bottom: 88px; }
+  .dish__body { padding: 16px 14px 18px; }
+  .btn { padding: 15px 28px; font-size: 15px; }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .dish { opacity: 1 !important; transform: none !important; }
+  .hero__bg img { animation: none !important; transform: scale(1.05) !important; }
+}
+</style>
+</head>
+<body>
+
+<noscript>
+<style>
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .dish { opacity: 1 !important; transform: none !important; }
+</style>
+</noscript>
+
+<header class="header" id="header">
+  <div class="header__inner">
+
+    <a href="#home" class="logo" aria-label="كبابجي ومشويات الشيخ - الرئيسية">
+      <img
+        src="logo.png"
+        alt="كبابجي ومشويات الشيخ"
+        class="logo__img"
+        width="120" height="56"
+        loading="eager"
+        decoding="async"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+      >
+      <span class="logo__fallback" aria-hidden="true">
+        <span class="logo__mark">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+          </svg>
+        </span>
+        <span class="logo__name">الشيخ</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="#home">الرئيسية</a>
+      <a href="#menu">المنيو</a>
+      <a href="#about">عننا</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <a
+      href="https://wa.me/201007669638?text=مرحبا، عايز أطلب من كبابجي ومشويات الشيخ"
+      target="_blank" rel="noopener"
+      class="header__cta"
+      aria-label="اطلب على واتساب">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span>اطلب</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true">
+    <img
+      src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1920&q=80"
+      alt=""
+      width="1920" height="1280"
+      fetchpriority="high"
+      decoding="async"
+    >
+  </div>
+  <div class="hero__content">
+    <div class="hero__badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+      مشويات على الفحم طازة كل يوم
+    </div>
+    <h1>أشهى <em>المشويات</em> في القاهرة</h1>
+    <p>كفتة، كباب، حواوشي، فراخ، شيش طاووق، وممبار. كله بيتشوي على الفحم قدامك. اطلب دلوقتي ووصلك لحد باب البيت.</p>
+    <div class="hero__actions">
+      <a href="https://wa.me/201007669638?text=مرحبا، عايز أطلب من كبابجي ومشويات الشيخ" target="_blank" rel="noopener" class="btn btn--primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        اطلب على واتساب
+      </a>
+      <a href="#menu" class="btn btn--ghost">
+        شوف المنيو
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <span>اكتشف</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M19 14l-7 7m0 0l-7-7"/></svg>
+  </div>
+</section>
+
+<!-- STEPS SECTION -->
+<section class="steps-section">
+  <div class="steps-head reveal">
+    <span class="eyebrow">طلبك في ثواني</span>
+    <h2>٣ خطوات بس.. والمشويات على بابك</h2>
+    <p>مفيش تسجيل، مفيش انتظار، مفيش تعقيد.</p>
+  </div>
+
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step__num">١</div>
+      <h3 class="step__title">اختار طبقك</h3>
+      <p class="step__desc">اتفرج على المنيو واختار اللي نفسك فيه من المشويات.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step__num">٢</div>
+      <h3 class="step__title">ابعت على واتساب</h3>
+      <p class="step__desc">دوس على زرار "اطلب" وهنستقبل طلبك في نفس اللحظة.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step__num">٣</div>
+      <h3 class="step__title">وصلك لحد باب البيت</h3>
+      <p class="step__desc">بنوصل في نص ساعة لأي مكان في المنطقة. طازة وسخنة.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="about">
+    <div class="about__images reveal">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="أجواء المطعم" loading="lazy" width="900" height="900">
+      <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=600&q=80" alt="مشويات على الفحم" loading="lazy" width="600" height="600">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="طبق مشويات" loading="lazy" width="600" height="600">
+    </div>
+    <div class="about__text reveal">
+      <span class="section__eyebrow">قصتنا</span>
+      <h2>من قلب القاهرة.. أشهى مشويات على الفحم</h2>
+      <p>كبابجي ومشويات الشيخ بدأ بمحل صغير وحلم كبير: نقدم أطيب المشويات المصرية الأصيلة بمكونات طازة وطريقة تحضير تقليدية. دلوقتي بقينا وجهة لكل عشاق الكباب والكفتة في القاهرة.</p>
+      <p>كل حتة لحمة بتتقطع وتتبل وتتشوي على الفحم قدامك. عشان كده طعمنا مختلف وعميلنا دايمًا بيرجع.</p>
+      <div class="about__stats">
+        <div class="stat"><strong>+15</strong><span>سنة خبرة</span></div>
+        <div class="stat"><strong>+30</strong><span>طبق أصيل</span></div>
+        <div class="stat"><strong>7.8K</strong><span>متابع على فيسبوك</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section menu-section" id="menu">
+  <div class="section__head reveal">
+    <span class="section__eyebrow">المنيو</span>
+    <h2>اختار أكلة واطلبها في ثانية</h2>
+    <p>دوس على "اطلب" على أي طبق وهنستقبل طلبك على الواتس على طول.</p>
+  </div>
+
+  <div class="menu-tabs reveal" id="menuTabs" role="tablist" aria-label="تصنيفات المنيو">
+    <button class="tab active" data-cat="all" role="tab" aria-selected="true">الكل</button>
+    <button class="tab" data-cat="grills" role="tab" aria-selected="false">مشويات</button>
+    <button class="tab" data-cat="hawawshi" role="tab" aria-selected="false">حواوشي</button>
+    <button class="tab" data-cat="chicken" role="tab" aria-selected="false">فراخ وشيش</button>
+    <button class="tab" data-cat="sides" role="tab" aria-selected="false">مقبلات وإضافات</button>
+    <button class="tab" data-cat="drinks" role="tab" aria-selected="false">مشروبات</button>
+  </div>
+
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="section" style="padding-top:0;">
+  <div class="cta-banner reveal">
+    <h2>جعان؟ يلا نطلب بقى! 🔥</h2>
+    <p>دوس على الزرار وابعت طلبك على الواتس في ثانية واحدة. بدون تسجيل، بدون دفع أونلاين.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; position:relative;">
+      <a href="https://wa.me/201007669638?text=مرحبا، عايز أطلب من كبابجي ومشويات الشيخ" target="_blank" rel="noopener" class="btn btn--primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        اطلب على واتساب
+      </a>
+      <a href="tel:+201007669638" class="btn btn--ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        كلمنا: 0100 766 9638
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="padding-top:20px;">
+  <div class="section__head reveal">
+    <span class="section__eyebrow">تواصل معنا</span>
+    <h2>تعرف مكاننا وزورنا</h2>
+    <p>مستنيينك كل يوم. اطلب توصيل أو تعال خد أكلك بنفسك.</p>
+  </div>
+
+  <div class="contact">
+    <div class="info-card reveal">
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <h4>العنوان</h4>
+          <p>شارع التحرير، القاهرة، مصر</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <h4>اتصل بينا</h4>
+          <a href="tel:+201007669638">0100 766 9638</a>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div>
+          <h4>مواعيد العمل</h4>
+          <p>يومياً من 12:00 ظهراً حتى 2:00 بعد منتصف الليل</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <div>
+          <h4>فيسبوك</h4>
+          <a href="https://www.facebook.com/profile.php?id=61561365383149" target="_blank" rel="noopener">صفحتنا على فيسبوك</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=31.22%2C30.03%2C31.26%2C30.07&layer=mapnik&marker=30.0459%2C31.2403"
+        loading="lazy"
+        title="موقع المطعم على الخريطة"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__about">
+      <a href="#home" class="logo" aria-label="كبابجي ومشويات الشيخ">
+        <img
+          src="logo.png"
+          alt="كبابجي ومشويات الشيخ"
+          class="logo__img"
+          width="120" height="56"
+          loading="lazy"
+          decoding="async"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        >
+        <span class="logo__fallback" style="color:#fff" aria-hidden="true">
+          <span class="logo__mark">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+            </svg>
+          </span>
+          <span class="logo__name">الشيخ</span>
+        </span>
+      </a>
+      <p>مشويات على الفحم، لحوم بلدي طازة، وطعم أصيل من قلب القاهرة. اطلب دلوقتي ووصلك لحد باب البيت.</p>
+    </div>
+    <div>
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#menu">المنيو</a></li>
+        <li><a href="#about">عننا</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>تابعنا</h4>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61561365383149" target="_blank" rel="noopener" aria-label="فيسبوك">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" aria-label="انستجرام">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="#" aria-label="تيك توك">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 كبابجي ومشويات الشيخ. جميع الحقوق محفوظة. (موقع تجريبي)</span>
+    <span>صُنع بـواسطه محمد ❤️  </span>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/201007669638?text=مرحبا، عايز أطلب من كبابجي ومشويات الشيخ"
+   target="_blank" rel="noopener" class="float-wa" aria-label="طلب على واتساب">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>اطلب الآن</span>
+</a>
+
+<script>
+/* ============ MENU DATA — صور مختلفة لكل طبق ============ */
+const menuItems = [
+  // مشويات
+  { name: "كفتة مشوية", desc: "لحم مفروم بلدي متبل ومشوي على الفحم", price: 120, cat: "grills", img: "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80", badge: "الأكثر طلباً" },
+  { name: "كباب ضاني", desc: "كباب لحم ضأن مشوي بنكهة مدخنة", price: 160, cat: "grills", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" },
+  { name: "طرب", desc: "طرب مشوي طازة بتتبيلة خاصة", price: 140, cat: "grills", img: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=600&q=80" },
+  { name: "كبد وكلاوي", desc: "كبد وكلاوي مشوية على الفحم", price: 130, cat: "grills", img: "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=600&q=80" },
+  { name: "ممبار", desc: "ممبار محشي ومشوي على الفحم", price: 110, cat: "grills", img: "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=600&q=80", badge: "الأكثر طلباً" },
+  { name: "طبق مشويات مشكل", desc: "كباب، كفتة، طرب، ريش، كبد وكلاوي", price: 280, cat: "grills", img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80", badge: "الأكثر طلباً" },
+
+  // حواوشي
+  { name: "حواوشي لحمة", desc: "حواوشي محشي لحمة مفرومة ومشوي في الفرن", price: 60, cat: "hawawshi", img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80", badge: "الأكثر طلباً" },
+  { name: "حواوشي فراخ", desc: "حواوشي محشي فراخ متبلة ومشوي", price: 55, cat: "hawawshi", img: "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&q=80" },
+  { name: "حواوشي مشكل", desc: "حواوشي لحمة وفراخ مع بعض", price: 65, cat: "hawawshi", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" },
+
+  // فراخ وشيش
+  { name: "شيش طاووق", desc: "قطع دجاج متبلة ومشوية مع صوص الثوم", price: 130, cat: "chicken", img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=600&q=80" },
+  { name: "نص فرخة مشوية", desc: "نص فرخة متبلة ومشوية على الفحم", price: 110, cat: "chicken", img: "https://images.unsplash.com/photo-1594221708779-94832f4320d1?auto=format&fit=crop&w=600&q=80" },
+  { name: "فرخة كاملة مشوية", desc: "فرخة كاملة متبلة ومشوية على الفحم", price: 200, cat: "chicken", img: "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=600&q=80" },
+  { name: "شيش طاووق بالجبنة", desc: "شيش طاووق مغطى بالجبنة الموتزاريلا", price: 150, cat: "chicken", img: "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=600&q=80" },
+
+  // مقبلات وإضافات
+  { name: "سلطة بلدي", desc: "طماطم، خيار، بصل، فلفل أخضر", price: 25, cat: "sides", img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" },
+  { name: "طحينة", desc: "طحينة بلدي بالليمون", price: 20, cat: "sides", img: "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=600&q=80" },
+  { name: "بابا غنوج", desc: "باذنجان مشوي مع طحينة وثوم", price: 30, cat: "sides", img: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" },
+  { name: "أرز بسمتي", desc: "أرز بسمتي مطبوخ بالسمن البلدي", price: 25, cat: "sides", img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=600&q=80" },
+  { name: "عيش بلدي", desc: "عيش بلدي طازة من الفرن", price: 10, cat: "sides", img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" },
+
+  // مشروبات
+  { name: "مياه غازية", desc: "كولا، سفن، فيروز", price: 15, cat: "drinks", img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?auto=format&fit=crop&w=600&q=80" },
+  { name: "عصير مانجو", desc: "مانجو طبيعي 100%", price: 30, cat: "drinks", img: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80" },
+  { name: "عصير برتقال", desc: "برتقال طبيعي معصور في الحال", price: 25, cat: "drinks", img: "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80" },
+  { name: "شاي", desc: "شاي مصري ثقيل", price: 10, cat: "drinks", img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" },
+];
+
+const WHATSAPP_NUMBER = "201007669638";
+
+/* ============ RENDER MENU ============ */
+const grid = document.getElementById('menuGrid');
+const tabsEl = document.getElementById('menuTabs');
+
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[c]));
+}
+
+function renderMenu(cat) {
+  const items = cat === 'all' ? menuItems : menuItems.filter(i => i.cat === cat);
+  const frag = document.createDocumentFragment();
+
+  items.forEach((item, i) => {
+    const card = document.createElement('article');
+    card.className = 'dish';
+    card.style.animationDelay = (i * 60) + 'ms';
+
+    const msg = encodeURIComponent(`مرحبا، عايز أطلب: ${item.name} - السعر: ${item.price} ج.م`);
+
+    card.innerHTML = `
+      <div class="dish__img">
+        ${item.badge ? `<span class="dish__badge">${escapeHTML(item.badge)}</span>` : ''}
+        <img src="${item.img}" alt="${escapeHTML(item.name)}" loading="lazy" width="600" height="450"
+             onerror="this.style.opacity=0;this.parentElement.setAttribute('aria-hidden','true')">
+      </div>
+      <div class="dish__body">
+        <h3 class="dish__title">${escapeHTML(item.name)}</h3>
+        <p class="dish__desc">${escapeHTML(item.desc)}</p>
+        <div class="dish__bottom">
+          <div class="dish__price">${item.price}<small> ج.م</small></div>
+          <a class="dish__order" href="https://wa.me/${WHATSAPP_NUMBER}?text=${msg}"
+             target="_blank" rel="noopener" aria-label="اطلب ${escapeHTML(item.name)} على واتساب">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            اطلب
+          </a>
+        </div>
+      </div>
+    `;
+    frag.appendChild(card);
+  });
+
+  grid.innerHTML = '';
+  grid.appendChild(frag);
+}
+renderMenu('all');
+
+/* ============ TABS ============ */
+tabsEl.addEventListener('click', e => {
+  const btn = e.target.closest('.tab');
+  if (!btn) return;
+  tabsEl.querySelectorAll('.tab').forEach(t => {
+    t.classList.remove('active');
+    t.setAttribute('aria-selected', 'false');
+  });
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected', 'true');
+
+  if (tabsEl.scrollWidth > tabsEl.clientWidth) {
+    btn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+  }
+
+  renderMenu(btn.dataset.cat);
+});
+
+/* ============ HEADER SCROLL ============ */
+const header = document.getElementById('header');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+/* ============ MOBILE NAV ============ */
+const nav = document.getElementById('nav');
+const navOverlay = document.getElementById('navOverlay');
+const menuToggle = document.getElementById('menuToggle');
+
+function closeNav() {
+  nav.classList.remove('open');
+  navOverlay.classList.remove('show');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+function openNav() {
+  nav.classList.add('open');
+  navOverlay.classList.add('show');
+  menuToggle.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+menuToggle.addEventListener('click', () => {
+  nav.classList.contains('open') ? closeNav() : openNav();
+});
+navOverlay.addEventListener('click', closeNav);
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); });
+
+/* ============ REVEAL ON SCROLL ============ */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
